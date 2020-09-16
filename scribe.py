@@ -183,7 +183,7 @@ class Scribe(object):
         self.read(mid, tag + " " + drawing)
 
     def read(self, mid, text):
-        if "velasco" in text.casefold() and len(text.split()) <= 3:
+        if "adolf" in text.casefold() and len(text.split()) <= 3:
             return
         words = [Markov.Head]
         text = text + " " + Markov.Tail
