@@ -19,7 +19,7 @@ try:
 except ImportError as e:
     coloredlogsError = e
 
-username = "decepticonyautobot"
+username = "AdolfChatBot"
 speakerbot = None
 
 logger = logging.getLogger(__name__)
@@ -108,15 +108,15 @@ def main():
 
     archivist = Archivist(
         logger,
-        chatdir="chatlogs/",
-        chatext=".vls",
+        chatdir="/home/Makdix7/velasco/",
+        chatext="loog.vls",
         admin=args.admin_id,
         filterCids=filterCids,
         readOnly=False,
     )
 
     speakerbot = Speaker(
-        "adolf", "@" + username, archivist, logger, wakeup=args.wakeup
+        "velasco", "@" + username, archivist, logger, wakeup=args.wakeup
     )
 
     # Get the dispatcher to register handlers
@@ -137,7 +137,7 @@ def main():
     # dp.add_handler(CommandHandler("user", get_name, Filters.chat(chat_id=archivist.admin)))
     # dp.add_handler(CommandHandler("id", get_id))
     dp.add_handler(CommandHandler("stop", stop))
-    dp.add_handler(CommandHandler("speak", speakerbot.speak))
+    dp.add_handler(CommandHandler("adolf", speakerbot.speak))
     dp.add_handler(CommandHandler("answer", speakerbot.answer))
     dp.add_handler(CommandHandler("restrict", speakerbot.restrict))
     dp.add_handler(CommandHandler("silence", speakerbot.silence))
