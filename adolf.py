@@ -108,7 +108,7 @@ def main():
 
     archivist = Archivist(
         logger,
-        chatdir="/Adolf/",
+        chatdir="Adolf",
         chatext="loog.vls",
         admin=args.admin_id,
         filterCids=filterCids,
