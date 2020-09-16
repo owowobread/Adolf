@@ -108,7 +108,7 @@ def main():
 
     archivist = Archivist(
         logger,
-        chatdir="/home/Makdix7/velasco/",
+        chatdir="/home/Makdix7/adolf/",
         chatext="loog.vls",
         admin=args.admin_id,
         filterCids=filterCids,
@@ -116,7 +116,7 @@ def main():
     )
 
     speakerbot = Speaker(
-        "velasco", "@" + username, archivist, logger, wakeup=args.wakeup
+        "adolf", "@" + username, archivist, logger, wakeup=args.wakeup
     )
 
     # Get the dispatcher to register handlers
