@@ -19,7 +19,7 @@ try:
 except ImportError as e:
     coloredlogsError = e
 
-username = "AdolfChatBot"
+username = "CollyXBot"
 speakerbot = None
 
 logger = logging.getLogger(__name__)
@@ -116,7 +116,7 @@ def main():
     )
 
     speakerbot = Speaker(
-        "adolf", "@" + username, archivist, logger, wakeup=args.wakeup
+        "collyX", "@" + username, archivist, logger, wakeup=args.wakeup
     )
 
     # Get the dispatcher to register handlers
