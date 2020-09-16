@@ -108,7 +108,7 @@ def main():
 
     archivist = Archivist(
         logger,
-        chatdir="https://dashboard.heroku.com/apps/adolfbot/",
+        chatdir="Adolf/",
         chatext="loog.vls",
         admin=args.admin_id,
         filterCids=filterCids,
