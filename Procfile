@@ -1,1 +1,1 @@
-app: python3 adolf.py 1037468236:AAEn6XuqsbRWxi3QNUVTS6vDAycqs-BlX4I 935918694
+app: python3 adolf.py 8141311601:AAF-X7IkQPGz0jnQf1FfVhpboIEx3fLL3ds 7239822285
